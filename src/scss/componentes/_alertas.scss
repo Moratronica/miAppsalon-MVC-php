@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+
+.alerta {
+    padding: calc(v.$separacion / 4);
+    color: v.$blanco;
+    width: 100%; // todo el ancho
+    display: block; // asegurarnos que se pone una alerta debajo de otra
+    margin-bottom: 2rem; // margen inferior
+    text-align: center; // alinear al centro
+    font-weight: v.$bold; // Grosor de la letra 
+    text-transform: uppercase; // Transforma a mayusculas
+
+    // Si es un mensaje de error
+    &.error {
+        background-color: v.$rojo; 
+    }
+    // Si es un mensaje positivo
+    &.exito {
+        background-color: v.$verde;
+    }
+}
+
+.swal2-popup {
+    font-size: 1.5rem;
+}

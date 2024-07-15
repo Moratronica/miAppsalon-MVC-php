@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion {
+    padding: 5rem 0;
+    display: none;
+
+    .text-center {
+        text-align: center;
+    }
+}
+
+.mostrar {
+    display: block;
+}
+.ocultar {
+    display: none;
+}
+.no-cita {
+    background-color: v.$verde;
+    margin: v.$separacion*2 0;
+    font-size: 2rem;
+    padding: 2rem;
+    @include m.tablet {
+        font-size: 3rem;
+        padding: 3rem;
+    }
+}
