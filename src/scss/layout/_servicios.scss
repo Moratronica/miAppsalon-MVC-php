@@ -5,9 +5,10 @@
 
     display: grid;
     gap: 2rem;
-    
+
     @include m.tablet {
         @include m.grid(2, 2rem);
+        padding: 3rem;
     }
 
     .servicio {
@@ -15,15 +16,14 @@
         padding: 3rem;
         border-radius: 1rem;
         transition-property: transform; // Una transicion al transform
-        transition-duration: 300ms; // tiempo que dura la transicion
+        transition-duration: 350ms; // tiempo que dura la transicion
         text-align: center;
 
         @include m.tablet {
             text-align: left;
 
             &:hover {
-                outline: 3px solid v.$azul;
-                transform: scale(1.04);
+                transform: scale(1.1);
             }
         }
 
